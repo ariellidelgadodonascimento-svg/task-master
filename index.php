@@ -3,6 +3,10 @@
 // AULA 01: O CÓDIGO SPAGHETTI (Tudo misturado)
 // ==========================================
 
+// ==========================================
+// feito por: [Felipe Silva e Arielli]
+// ==========================================
+
 // 1. CONEXÃO COM O BANCO DE DADOS E CRIAÇÃO DA TABELA (Acoplamento de Infraestrutura)
 $dbFile = __DIR__ . '/tasks.sqlite';
 $pdo = new PDO('sqlite:' . $dbFile);
@@ -159,6 +163,3 @@ $tasks = $stmt->fetchAll(PDO::FETCH_ASSOC);
 </body>
 </html>
 
-// ==========================================
-// feito por: [Felipe Silva e Arielli]
-// ==========================================
