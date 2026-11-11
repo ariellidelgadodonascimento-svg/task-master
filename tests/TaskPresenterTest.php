@@ -6,8 +6,8 @@ require_once __DIR__ . '/../src/Presenter/TaskPresenter.php';
 
 class TaskPresenterTest extends TestCase {
     public function testIndexFormataTitulosParaMaiusculo() {
-        // 1. Mock do Model (Fingimos que o banco retornou uma tarefa minúscula)
-        $modelMock = $this->createMock(Task::class);
+        // 1. Stub do Model (Fingimos que o banco retornou uma tarefa minúscula)
+        $modelMock = $this->createStub(Task::class);
         $modelMock->method('getAll')->willReturn([
             ['id' => 1, 'title' => 'estudar php', 'description' => '', 'due_date' => '', 'done' => 0]
         ]);
